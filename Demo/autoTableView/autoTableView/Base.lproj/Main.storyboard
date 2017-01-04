@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wui-6o-aNx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="97Q-PC-sJQ">
+            <objects>
+                <navigationController id="wui-6o-aNx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QgG-qO-1oE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LIr-z4-rMc" kind="relationship" relationship="rootViewController" id="WVH-Uw-sCv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pKI-8m-MfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210" y="-39"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZbE-gi-9jk">
+            <objects>
+                <viewController id="LIr-z4-rMc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="430-Gb-nr7"/>
+                        <viewControllerLayoutGuide type="bottom" id="afF-YE-fF5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pfi-E6-Weh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv1-8a-JUs">
+                                <rect key="frame" x="152.5" y="318.5" width="70" height="30"/>
+                                <state key="normal" title="进入demo"/>
+                                <connections>
+                                    <action selector="goToUnionVC:" destination="LIr-z4-rMc" eventType="touchUpInside" id="3jQ-lU-H1d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fv1-8a-JUs" firstAttribute="centerX" secondItem="Pfi-E6-Weh" secondAttribute="centerX" id="4mI-XC-FM0"/>
+                            <constraint firstItem="fv1-8a-JUs" firstAttribute="centerY" secondItem="Pfi-E6-Weh" secondAttribute="centerY" id="nd9-Kf-E5O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sPI-gP-7Fx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBu-A6-4GM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="-39"/>
+        </scene>
+    </scenes>
+</document>
