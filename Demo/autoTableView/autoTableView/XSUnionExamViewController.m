@@ -14,7 +14,6 @@
     NSTimer *_timer;
 }
 
-
 @property (weak, nonatomic) IBOutlet UITableView *unionTableView;
 
 @end
@@ -51,6 +50,7 @@
  @param scrollView scrollView
  */
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    NSLog(@"%@",scrollView);
     [self stopTime];
 }
 
@@ -61,6 +61,7 @@
  @param decelerate decelerate
  */
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    NSLog(@"%@",scrollView);
     [self startTime];
 }
 
@@ -93,7 +94,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20 + 12;//数组数量+一页最多的个数
+    return 20 + 12;//数组数量 + 一页最多的个数
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
